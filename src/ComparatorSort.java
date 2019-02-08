@@ -5,6 +5,15 @@ import java.util.Comparator;
 class Employee{
     public String name;
     public int age;
+    public String dept;
+
+    public String getDept() {
+        return dept;
+    }
+
+    public void setDept(String dept) {
+        this.dept = dept;
+    }
 
     public String getName() {
         return name;
@@ -22,9 +31,10 @@ class Employee{
         this.age = age;
     }
 
-    public Employee(String name, int age) {
+    public Employee(String name, int age,String dept) {
         this.name = name;
         this.age = age;
+        this.dept=dept;
     }
 
     @Override
@@ -32,9 +42,11 @@ class Employee{
         return "Employee{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
+                ", dept='" + dept + '\'' +
                 '}';
     }
 }
+
 class SortByName implements Comparator<Employee> {
     @Override
     public int compare(Employee o1, Employee o2) {
@@ -51,9 +63,9 @@ class SortByAge implements Comparator<Employee>{
 public class ComparatorSort {
     public static void main(String[] args) {
 
-        Employee employee=new Employee("SUJU",32);
-        Employee employee1=new Employee("ARUL",22);
-        Employee employee2=new Employee("kamal",1);
+        Employee employee=new Employee("SUJU",32,"cse");
+        Employee employee1=new Employee("ARUL",22,"eee");
+        Employee employee2=new Employee("kamal",1,"aero");
 
         ArrayList<Employee> list=new ArrayList<>();
         list.add(employee);
@@ -70,7 +82,7 @@ public class ComparatorSort {
             System.out.println(list.get(i).toString());
         }
 
-        Collections.sort(list,Comparator.comparing(Employee::getName).thenComparingInt(Employee::getAge));
+        Collections.sort(list,Comparator.comparing(Employee::getDept).thenComparing(Employee::getName));
         for(int i=0;i<list.size();i++){
             System.out.println(list.get(i).toString());
         }
