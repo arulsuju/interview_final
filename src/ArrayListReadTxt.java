@@ -3,8 +3,6 @@ import java.io.File;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Collections;
-
-
 public class ArrayListReadTxt {
     ArrayList<String> arrayList=new ArrayList<>();
     public void addSong(String line){
