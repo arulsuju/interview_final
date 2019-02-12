@@ -34,8 +34,9 @@ public class WhyShouldOverrideHashandEquals {
         SampleHash sampleHash1=new SampleHash("Suju",32);
         Map<SampleHash,String> map=new HashMap<>();
         map.put(sampleHash,"cse");
-        map.put(sampleHash1,"it");
+        map.put(sampleHash1,"cse");
 
+        System.out.println(map.size());
        for(SampleHash sampleHash2:map.keySet()){
            System.out.println(map.toString());
        }
