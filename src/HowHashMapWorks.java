@@ -5,6 +5,9 @@ public class HowHashMapWorks {
 
     public static void main(String[] args) {
         HashMap<String,Integer> hashMap=new HashMap<>();
+        int msg="aaa".hashCode();
+        int index=msg%16;
+        System.out.println(msg+"-->"+index);
         hashMap.put("aaa",1);
         hashMap.put("bbb",2);
         hashMap.put("ccc",3);
