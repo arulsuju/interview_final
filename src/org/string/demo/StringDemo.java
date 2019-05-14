@@ -7,7 +7,7 @@ public class StringDemo extends Object {
         String str="Hello World";
         System.out.println(str.hashCode());
 
-        String str1="Hello World234";
+        String str1="Hello World";
         System.out.println(str1.hashCode());
 
         //str1.substring(1);

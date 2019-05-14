@@ -82,7 +82,8 @@ public class ComparatorSort {
             System.out.println(list.get(i).toString());
         }
 
-        Collections.sort(list,Comparator.comparing(Employee::getDept).thenComparing(Employee::getName));
+        Collections.sort(list,Comparator.comparing(Employee::getDept)
+                .thenComparing(Employee::getName));
         for(int i=0;i<list.size();i++){
             System.out.println(list.get(i).toString());
         }
