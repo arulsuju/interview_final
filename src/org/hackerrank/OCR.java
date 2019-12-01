@@ -54,6 +54,7 @@ public class OCR {
     public static void main(String[] args) {
         OCR ocr=new OCR();
         System.out.println(ocr.Solution("ba1","1Ad"));
+        //added comments
 
     }
 }
