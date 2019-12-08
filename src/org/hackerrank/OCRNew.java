@@ -40,6 +40,6 @@ public class OCRNew {
         OCRNew ocr=new OCRNew();
         System.out.println(ocr.Solution("ba1","1Ad"));
         System.out.println(ocr.Solution("A2Le","1ppLe"));
-        System.out.println(ocr.Solution("ba1","1Ad"));
+        System.out.println(ocr.Solution("a10b","aaaaaaaaaaab"));
     }
 }
