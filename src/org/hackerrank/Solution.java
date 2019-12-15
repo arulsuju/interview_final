@@ -1,13 +1,7 @@
 package org.hackerrank;
 
 import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
 import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
-
 
 
 class Result {
@@ -29,7 +23,31 @@ class Result {
                                    List<Integer> friends_weight) {
 
         // Write your code here
-        return 1;
+        int[] friends_from1=friends_from.stream()
+                .mapToInt(Integer::intValue)
+                .toArray();
+        int[] friends_to1=friends_to.stream()
+                .mapToInt(Integer::intValue)
+                .toArray();
+        int[] friends_weight1=friends_weight.stream()
+                .mapToInt(Integer::intValue)
+                .toArray();
+
+        int res = 0, max_weight = 0;
+
+        // loop to traverse all weight
+        for (int i = 0; i < friends_nodes; i++) {
+            // check if weight is more than max weight
+            if (friends_weight1[i] > max_weight) {
+                // calculate res as multiply of from and to
+                res = friends_from1[i] * friends_to1[i];
+                // set max weight
+                max_weight = friends_weight1[i];
+            }
+        }
+        // return result
+        return res;
+
 
     }
 
