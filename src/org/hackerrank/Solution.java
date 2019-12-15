@@ -55,6 +55,7 @@ class Result {
 
 public class Solution {
     public static void main(String[] args) throws IOException {
+        /*
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 
@@ -86,14 +87,36 @@ public class Solution {
             int friends_weightItem = Integer.parseInt(bufferedReader.readLine().trim());
             friends_weight.add(friends_weightItem);
         }
-
+        */
+        int friends_nodes=6;
+        List<Integer> friends_from=new ArrayList<>();
+        friends_from.add(1);
+        friends_from.add(7);
+        friends_from.add(5);
+        friends_from.add(10);
+        friends_from.add(6);
+        friends_from.add(2);
+        List<Integer> friends_to=new ArrayList<>();
+        friends_to.add(2);
+        friends_to.add(3);
+        friends_to.add(6);
+        friends_to.add(8);
+        friends_to.add(9);
+        friends_to.add(3);
+        List<Integer> friends_weight=new ArrayList<>();
+        friends_weight.add(51);
+        friends_weight.add(51);
+        friends_weight.add(51);
+        friends_weight.add(51);
+        friends_weight.add(51);
+        friends_weight.add(51);
         int result = Result.countCandies(friends_nodes, friends_from, friends_to, friends_weight);
+        System.out.println(result);
+       // bufferedWriter.write(String.valueOf(result));
+        //bufferedWriter.newLine();
 
-        bufferedWriter.write(String.valueOf(result));
-        bufferedWriter.newLine();
-
-        bufferedReader.close();
-        bufferedWriter.close();
+       // bufferedReader.close();
+        //bufferedWriter.close();
     }
 }
 
