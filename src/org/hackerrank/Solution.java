@@ -23,15 +23,36 @@ class Result {
                                    List<Integer> friends_weight) {
 
         // Write your code here
-        int[] friends_from1=friends_from.stream()
+        /*
+        *List<Integer> friends_from=new ArrayList<>();
+        friends_from.add(1);
+        friends_from.add(7);
+        friends_from.add(5);
+        friends_from.add(10);
+        friends_from.add(6);
+        friends_from.add(2);
+        int[] friends_from1={1,7,5,10,6,2}
+         */
+        int[] friends_from1=new int[friends_from.size()];
+        for(int i=0;i<friends_from.size();i++){
+            friends_from1[i]=friends_from.get(i);
+        }
+       /*int[] friends_from1=friends_from.stream()
                 .mapToInt(Integer::intValue)
-                .toArray();
-        int[] friends_to1=friends_to.stream()
+                .toArray();*/
+        /*int[] friends_to1=friends_to.stream()
                 .mapToInt(Integer::intValue)
-                .toArray();
+                .toArray();*/
+        int[] friends_to1=new int[friends_to.size()];
+        for(int i=0;i<friends_to.size();i++){
+            friends_to1[i]=friends_to.get(i);
+        }
+
         int[] friends_weight1=friends_weight.stream()
                 .mapToInt(Integer::intValue)
                 .toArray();
+
+
 
         int res = 0, max_weight = 0;
 
@@ -106,10 +127,10 @@ public class Solution {
         List<Integer> friends_weight=new ArrayList<>();
         friends_weight.add(51);
         friends_weight.add(51);
+        friends_weight.add(100);
+        friends_weight.add(200);
         friends_weight.add(51);
-        friends_weight.add(51);
-        friends_weight.add(51);
-        friends_weight.add(51);
+        friends_weight.add(62);
         int result = Result.countCandies(friends_nodes, friends_from, friends_to, friends_weight);
         System.out.println(result);
        // bufferedWriter.write(String.valueOf(result));
