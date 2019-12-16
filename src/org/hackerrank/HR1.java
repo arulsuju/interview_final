@@ -10,3 +10,4 @@ public class HR1 {
         System.gc();
     }
 }
+//coding! gc

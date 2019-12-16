@@ -8,6 +8,7 @@ public class HR4 {
         System.out.println(""+val);
     }
     public static String getString(String str){
+        System.out.println(str.length());
         StringBuffer stringBuffer=new StringBuffer(str.length());
         for(int i=str.length()-1;i>0;i--){
             stringBuffer.append(str.charAt(i));

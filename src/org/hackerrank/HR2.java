@@ -8,3 +8,4 @@ public class HR2 {
         System.out.println(var1.equals(var2));
     }
 }
+//TRUE FALSE
