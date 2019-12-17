@@ -12,7 +12,7 @@ public class BufferedReaderDemo {
         FileInputStream fis=new FileInputStream(file);
         BufferedReader bufferedReader=new BufferedReader(new InputStreamReader(fis));
         while(bufferedReader.readLine()!=null){
-            System.out.println(bufferedReader.readLine());
+            System.out.print(bufferedReader.readLine());
         }
     }
 }

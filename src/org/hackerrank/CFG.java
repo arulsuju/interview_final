@@ -2,6 +2,7 @@
 package org.hackerrank;
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class CFG {
@@ -31,28 +32,35 @@ public class CFG {
         br.close();
     }
     static int[] GoodSubArray(int[] arr, int K, int N){
-        List<Integer> list=new ArrayList<>();
-        int[] res=new int[arr.length];
-        int count;
-        int length=0;
-        for(int i=0;i<arr.length;i++){
-            count=0;
+        // TODO Auto-generated method stub
+        int i=0, count =1, index =0, ac=0;
 
-            for(int first=count;first<arr.length;first++){
-                for(int second=first+1;second<arr.length-1;second++){
-                    if(arr[first]-arr[second]==K || arr[second]-arr[first]==K){
-                       length++;
-                       count=count+1;
-                    }
-                    else{
-                        length=1;
-                    }
+        int length = N-1;
+        int x[] = new int[N];
 
+        while(length>=0) {
+            if(i==length) {
+                x[index]= count;
+                break;
+
+            }else {
+                while(arr[i+1]-arr[i] == K) {
+                    count ++;
+                    i++;
+                    if(i>=length)
+                        break;
                 }
-                res[i]=length;
             }
+            x[index]= count;
+            index++;
+            count = 1;
+            ac ++;
+            i=ac;
+            length--;
         }
-        return res;
+
+        return x;
+
     }
 }
 /*
