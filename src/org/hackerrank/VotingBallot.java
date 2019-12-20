@@ -1,9 +1,6 @@
 package org.hackerrank;
 
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
 /*
 There are n citizens voting in this year's Hackland election.
@@ -40,10 +37,13 @@ public class VotingBallot {
                 list.put(v,1);
             }
         }
-        System.out.println(list);
-        
-        System.out.println(Collections.max(list.entrySet(),
-                Map.Entry.comparingByValue()).getKey());
-
+        for(Map.Entry<String,Integer> val:list.entrySet()){
+            System.out.println(val);
+        }
+        //System.out.println(list);
+        String result=Collections
+                .max(list.entrySet(),Map.Entry.comparingByValue())
+                .getKey();
+        System.out.println(result);
     }
 }
