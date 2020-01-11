@@ -6,8 +6,8 @@ import java.util.Comparator;
 import java.util.List;
 
 public class Clock {
-    public static String solution(int A, int B, int C, int D) {
-        List<Integer> values = new ArrayList<>(Arrays.asList(new Integer[]{A, B, C, D}));
+    public static String solution(int A, int B, int C, int D,int E,int F) {
+        List<Integer> values = new ArrayList<>(Arrays.asList(new Integer[]{A, B, C, D,E,F}));
         try {
             int h1 = maxInRange(values, 2);
             System.out.println(h1);
@@ -21,11 +21,19 @@ public class Clock {
             System.out.println(m1);
             values.remove(values.indexOf(m1));
 
-            int m2 = maxInRange(values, 9);
+            int m2 = maxInRange(values, m1==6?0:9);
             System.out.println(m2);
             values.remove(values.indexOf(m2));
 
-            return String.format("%d%d:%d%d", h1, h2, m1, m2);
+            int s1 = maxInRange(values, 6);
+            System.out.println(s1);
+            values.remove(values.indexOf(s1));
+
+            int s2 = maxInRange(values, s1==6?0:9);
+            System.out.println(s2);
+            values.remove(values.indexOf(s2));
+
+            return String.format("%d%d:%d%d:%d%d", h1, h2, m1, m2,s1,s2);
         } catch (Exception e) {
             return "NOT POSSIBLE";
         }
@@ -36,7 +44,7 @@ public class Clock {
     }
 
     public static void main(String[] args) {
-        System.out.println(solution(1,8,3,2));
+        System.out.println(solution(0,0,0,7,8,9));
     }
 
 }
