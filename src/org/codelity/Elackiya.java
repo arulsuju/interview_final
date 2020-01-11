@@ -2,6 +2,17 @@ package org.codelity;
 
 import java.util.Arrays;
 /*
+Java Problem:
+
+Given four digits, find the maximum valid time that can be displayed on a digital clock (in 24-hour format) using those digits.
+
+For example, given digits 1,8,3,2 the maximum valid time is "23:18". Note that "28:31" is not a valid time.
+
+Write a function: string MaxTime(int A, int B, int C, int D); that, given four integers A,B,C,D, returns the maximum valid time in string format "HH:MM" or "NOT POSSIBLE" if it is not possible to display a valid time.
+
+Examples: given 1,8,3,2, the function MaxTime shoud return "23:18". Given 2,4,0,0 the funtion should return "20:40". Given 3,0,7,0 the function should return "07:30" Given 9,1,9,7 the function should return "NOT POSSIBLE".
+
+Since there is no possible valid time. Assume that: A,B,C,D are integers with in the range [0..9]
 Given six digit , find the earliest valid time that can be displayed
 in the digital clock
 import java.util.ArrayList;
