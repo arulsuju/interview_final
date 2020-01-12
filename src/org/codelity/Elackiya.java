@@ -50,6 +50,14 @@ public class Clock {
 public class Elackiya {
     public static String solution(int A,int B,int C,int D,int E,int F){
         int[] ar = {A,B,C,D,E,F};
+        /*
+        ar[0]=1;
+        ar[1]=2;
+        ar[2]=3;
+        ar[3]=4;
+        ar[4]=5;
+        ar[5]=6;
+        */
         Arrays.sort(ar);
         String hh;
         String mm;
@@ -88,6 +96,6 @@ public class Elackiya {
         }
     }
     public static void main(String[] args) {
-        System.out.println(solution(0,0,0,7,8,9));
+        System.out.println(solution(1,2,3,4,5,6));
     }
 }
