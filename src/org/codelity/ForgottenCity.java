@@ -1,5 +1,12 @@
 package org.codelity;
-
+/*There are N cities in a state. You start your ride from the first city.
+        You have to visit all other cities exactly once and finally return
+        to your origin city. After visiting each city, you collect the analysis
+        report. But when you reached the last unvisited city, you remembered that
+        you did not collect the report from city K So, now you decide to first
+        collect the report from city K and then return to your home city.
+        Given the distances between each pair of cities,
+        you are required to finAe shortest possible distance of your whole journey*/
 public class ForgottenCity {
     static int res = Integer.MAX_VALUE;
     private static int getMinDistance(int[][] nums, int k, int n) {
