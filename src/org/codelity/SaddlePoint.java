@@ -1,5 +1,4 @@
 package org.codelity;
-import java.io.*;
 import java.util.*;
 public class SaddlePoint {
     public static void main(String[] args) {
@@ -44,4 +43,4 @@ public class SaddlePoint {
         }
     }
     }
-    
+

@@ -70,3 +70,77 @@ public class BulpOn {
         System.out.println(getNumOfMoments(input));
     }
 }
+/*
+import java.util.Arrays;
+
+        import java.util.Scanner;
+
+
+
+public class Trying {
+
+
+
+    public static void main(String[] args) {
+
+
+
+        Scanner sc= new Scanner(System.in);
+
+        int n= sc.nextInt();
+
+
+
+        int[] ar = new int[n];
+
+
+
+        for(int i=0;i<n;i++) {
+
+            ar[i]= sc.nextInt();
+
+        }
+
+        int shine =0;
+
+        int count =0;
+
+        for(int i=0;i<ar.length;i++) {
+
+            for(int j=0;j<=i;j++) {
+
+                if(ar[i] >= ar[j]) {
+
+                    count++;
+
+                }
+
+            }
+
+            System.out.println(count);
+
+            if(count==ar[i]) {
+
+                shine++;
+
+            }
+
+            System.out.println(shine +" are shining "+ i);
+
+            count=0;
+
+        }
+
+        System.out.println(shine);
+
+
+
+
+
+
+
+    }
+
+
+
+}*/
