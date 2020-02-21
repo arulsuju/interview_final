@@ -1,4 +1,4 @@
-package org.codelity;
+package org.codelity.mutiplechoice;
 
 public class HR2 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package org.codelity;
+package org.codelity.mutiplechoice;
 
 public class HR1 {
     protected void finalize(){

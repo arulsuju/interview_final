@@ -1,4 +1,4 @@
-package org.codelity;
+package org.codelity.mutiplechoice;
 
 public class HR4 {
     static String val;

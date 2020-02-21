@@ -1,4 +1,4 @@
-package org.codelity;
+package org.codelity.mutiplechoice;
 interface Int1
 {
     void proc1();
