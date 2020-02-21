@@ -123,4 +123,106 @@
   d. none of the above
   answer : c
 
-21
+21.Q. You need to give the MANAGER role the ability to select from insert into and modify existing rows in the STUDENT_GRADES table.
+
+   Anyone given this MANAGER role should be able to pass those privileges on to others. Which statement accomplishes this.
+
+   A. GRANT select, insert, update ON student_grades TO manager;
+
+   B. GRANT select, insert, update ON student_grades TO ROLE manager
+
+   C. GRANT select, insert, modity ON student_grades TO manager WITH GRANT OPTION;
+
+   D. GRANT select, insert, update ON student_grades TO manager WITH GRANT OPTION
+
+   E. GRANT select, insert, update ON student_grades TO ROLE manager WITH GRANT OPTION;
+
+   F. GRANT select, insert, modify ON student_grades TO ROLE manager WITH GRANT OPTION
+
+    answer : D
+
+    https://www.stechies.com/oracle-certified-professional-exams-iz007-questions-set-1_1/
+
+22.A table that displays data redundancies yields ____________ anomalies
+   a.	Insertion
+   b.	Deletion
+   c.	Update
+   d.	All of the above
+   Answer:All of the above
+
+23 , what is % in sql
+    Represents zero or more characters	bl% finds bl, black, blue, and blob
+    https://www.w3schools.com/sql/sql_wildcards.asp
+
+24.Is ++ (increment) operator thread-safe in Java?
+No. Neither increment operator (++)
+nor the decrement operaor (--) is thread safe
+
+25.Which of the following HTTP Status code means CREATED, when a resource is
+   successful created using POST or PUT request?
+   A - 200
+   B - 201
+   C - 204
+   D - 304
+answer : b
+
+26.- Which of the following annotation of JAX RS API is used to annotate a method
+   used to create/update resource?
+   A - @Path
+   B - @GET
+   C - @PUT
+   D - @POST
+   answer : D
+
+27.Servlet Filters are Java classes that can be used in Servlet Programming for the following purposes −
+   To intercept requests from a client before they access a resource at back end.
+   To manipulate responses from server before they are sent back to the client.
+   There are various types of filters suggested by the specifications −
+   Authentication Filters.
+   Data compression Filters.
+   Encryption Filters.
+   Filters that trigger resource access events.
+   Image Conversion Filters.
+   Logging and Auditing Filters.
+   MIME-TYPE Chain Filters.
+   Tokenizing Filters .
+   XSL/T Filters That Transform XML Content.
+28.he isScriptingEnabled Attribute
+   The isScriptingEnabled attribute determines if the scripting elements are allowed for use.
+
+   The default value (true) enables scriptlets, expressions, and declarations. If the attribute's value is set to false, a translation-time error will be raised if the JSP uses any scriptlets, expressions (non-EL), or declarations.
+
+   The attribute’s value can be set to false if you want to restrict the usage of scriptlets, expressions (non-EL), or declarations −
+
+   <%@ page isScriptingEnabled = "false" %>
+
+29. Which of these method waits for the thread to treminate?
+   A. sleep()B. isAlive()C. join()D. stop()
+   answer : c
+   http://www.allindiaexams.in/engineering/cse/java-questions-and-answers/threads
+
+30.for Oracle 11g :(Maximum allowed column)
+   1000 Columns per table
+   32 columns per index
+   Logical Database Limits:
+   https://docs.oracle.com/cd/B28359_01/server.111/b28320/limits003.htm#i288032
+31.how do we  maintain data integrity in a database
+    a.using indexes
+    b. using referential constraints
+    c.using primary key
+    d. both B and C
+    Answer: ?
+32.A savepoint is a way of implementing subtransactions
+(also known as nested transactions) within a relational database management
+system by indicating a point within a transaction that can
+be "rolled back to" without affecting any work done in the transaction
+before the savepoint was created.
+
+33.In SQL (Structured Query Language), the term cardinality refers to the uniqueness of data values contained in a particular column (attribute) of a database table. The lower the cardinality, the more duplicated elements in a column.
+
+34.Can we use select statement in stored procedure?
+   Stored procedures are typically executed with an EXEC statement. However, you can execute a stored procedure implicitly from within a SELECT statement, provided that the stored procedure returns a result set.
+
+35.An interface can have default methods and static methods. Any other methods are implicitly public and abstract. All the fields declared in an interface are implicitly public, static and final constants. ... The static method sayHello can be called directly using the interface name without any sub classes.
+
+36.
