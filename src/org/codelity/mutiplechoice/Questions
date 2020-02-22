@@ -1,6 +1,6 @@
 1. Which Aggregate function that does not ignore NULLS(SQL)
     a.Distinct b.count(*) c.Average d.all the above
-    ANSWER : Distinct
+    ANSWER : b
 2.Public directive of Cache Control Header of HTTP response indicates that
     resource is cachable by any component.
     A - true(1)
@@ -76,6 +76,8 @@
     b.on update cascade
     c.create sequence in oracle
     d.drop sequence in oracle
+
+    answer: b
 14.A . . . . . . . subquery is one that depends on a value in the outer query.
 
    A) nested
