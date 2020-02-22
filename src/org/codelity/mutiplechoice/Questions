@@ -252,4 +252,8 @@ before the savepoint was created.
     A Manager is an Employee.
     This is captured by making Employee the base class of Manager.
     http://www.pskills.org/test.jsp?test=coretest8#ques3
-39.
+39.On the other hand, Thread.sleep() is a static method that can be called from any context.
+Thread.sleep() pauses the current thread and does not release any locks.
+40.A DOM parser creates a tree structure in memory from the input document
+and then waits for requests from client.
+But a SAX parser does not create any internal structure.
