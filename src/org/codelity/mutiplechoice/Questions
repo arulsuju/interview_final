@@ -24,7 +24,7 @@
     b.use "IN DESC" with orderby clause
     c. use "<> ASC" with orderby clause
     d.None of these
-    answer : b
+    answer : d
 
 6. which is not correct
     a. A recursive method must have base class
