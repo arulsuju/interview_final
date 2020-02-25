@@ -1,5 +1,4 @@
 package org.codelity;
-import java.util.Arrays;
 /*
  * A non-empty zero-indexed matrix A consisting of N rows and M columns of integers is given.
  * A pair(P,Q) is called an equilibrium point of matrix A if following conditions are met:
