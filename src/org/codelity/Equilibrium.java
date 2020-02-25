@@ -74,16 +74,12 @@ public class Equilibrium {
         for (int i = 0; i < row.length; i++) {
             int leftsum = 0; // initialize left sum for current index i
             int rightsum = 0; // initialize right sum for current index i
-
-            for (int j = 0; j < i; j++) { // 왼쪽배열
+            for (int j = 0; j < i; j++) {
                 leftsum += row[j];
             }
-
-            for (int k = i + 1; k < row.length; k++) { // 오른쪽배열
+            for (int k = i + 1; k < row.length; k++) {
                 rightsum += row[k];
             }
-            //log.debug("row i={} leftsum={} rightsum={}", i, leftsum, rightsum);
-
             if (leftsum == rightsum) {
                 equiRow++;
                 //return i;
@@ -92,19 +88,14 @@ public class Equilibrium {
         for (int i = 0; i < column.length; i++) {
             int leftsum = 0; // initialize left sum for current index i
             int rightsum = 0; // initialize right sum for current index i
-
-            for (int j = 0; j < i; j++) { // 왼쪽배열
+            for (int j = 0; j < i; j++) {
                 leftsum += column[j];
             }
-
-            for (int k = i + 1; k < column.length; k++) { // 오른쪽배열
+            for (int k = i + 1; k < column.length; k++) {
                 rightsum += column[k];
             }
-            //log.debug("column i={} leftsum={} rightsum={}", i, leftsum, rightsum);
-
             if (leftsum == rightsum) {
                 equiColumn++;
-                //return i;
             }
         }
         return equiRow * equiColumn;
