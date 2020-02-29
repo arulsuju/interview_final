@@ -8,7 +8,7 @@ public class New {
 			BufferedReader br=new BufferedReader(fr);
 			while((s=br.readLine())!=null) {
 				System.out.println(s);
-				br.flush();
+				//br.flush();
 				
 			}
 		} catch (IOException e) {

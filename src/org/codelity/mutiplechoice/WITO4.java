@@ -8,6 +8,8 @@ public class WITO4 {
         catch (Exception e){
             System.out.println(e);
         }
+
+
        /*catch (ArithmeticException ae){
             System.out.println(ae);
         }*/

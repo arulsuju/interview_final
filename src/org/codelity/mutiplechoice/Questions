@@ -258,4 +258,151 @@ Thread.sleep() pauses the current thread and does not release any locks.
 40.A DOM parser creates a tree structure in memory from the input document
 and then waits for requests from client.
 But a SAX parser does not create any internal structure.
+41.what is the data dictionary table to view all the session related data in a given database instance
+a. V$SQL b.all_sessions c.V$SESSION d.None of the above
+
+42.does dropping of table also drop all the dependent constraints and indexes
+a.No they have to be dropped manually
+b.yes they are dropped automatically
+c. it happens randomly
+d. None of the above
+
+43.can we remove rows of the table that depends value of another table
+a. Only table having less number of rows
+b. no this cant be done
+c. yes, they can be used with the help of sub queries on values from another table
+d. None of the above
+
+44. which of the following objects do not store data
+a. materialized view
+b. tables
+c. views
+d. none of the above
+
+45. which of the following object is required to access data of different schema on another database instance
+a. right
+b. grant
+c. DB job
+d. DB link
+
+46.https://www.quora.com/When-string-is-created-using-new-then-where-is-the-object-stored-in-heap-memory-or-string-constant-pool-or-both
+
+46.What is difference between "abc".equals(unknown string) and unknown.equals("abc")?
+   A. First is safe for NullPointerException
+   B. Second is safe for NullPointerException
+   answer : b
+47.What is the stored in the object obj in following lines of code?
+   box obj;
+   A. Memory address of allocated memory.	B. NULL
+   C. Any arbitrary pointer	D. Garbage
+   Correct Answer : OPTION B, NULL. Memory is allocated to an object using new operator. box obj; just declares a reference to object, no memory is allocated to it hence it points to NULL.
+48.What is the output of this program?
+   class main_class {
+           public static void main(String args[])
+           {
+               int x = 9;
+               if (x == 9) {
+                   int x = 8;
+                   System.out.println(x);
+               }
+           }
+       }
+   A. 9	B. 8
+   C. Compilation Error	D. Runtime Error
+   Correct Answer : OPTION C, Compilation Error. Two variables with the same name can't be created in a class.
+
+49.When we create String with new() Operator, where is it stored?
+   A. In to the String Pool
+   B. It is created in Heap but not added to String Pool
+   C. Not stored anywhere
+   D. None of the above
+   Correct Answer : OPTION B, It is created in Heap but not added to String Pool. When we create string with new() Operator, it's created in heap and not added into string pool while String created using literal are created in String pool itself.
+50.Which two methods you need to implement to use an Object as key in HashMap?
+   A. push() and pop()	B. get() and set()
+   C. equals() and hashcode()	D. put() and get()
+   Correct Answer : OPTION C, equals() and hashcode()
+
+
+51.Can abstract class have constructor in Java. Yes or No?
+   A. Yes	B. No
+   Correct Answer : OPTION A, Yes
+52.What is difference between "abc".equals(unknown string) and unknown.equals("abc")?
+   A. First is safe for NullPointerException	B. Second is safe for NullPointerException
+   Correct Answer : OPTION A, First is safe for NullPointerException
+53.Which keyword is used by method to refer to the object that invoked it?
+   A. import	B. catch
+   C. abstract	D. this
+   Correct Answer : OPTION D, this
+54.Which of the following is a method having same name as that of its class?
+   A. finalize	B. delete
+   C. class	D. constructor
+   Correct Answer : OPTION D, Constructor
+55.Which method is used to perform some action when the object is to be destroyed?
+   A. finalize()	B. delete()
+   C. main()	D. None of the above mentioned
+   Correct Answer : OPTION A, finalize()
+
+
+56.Which of the following stements are incorrect?
+   A. Default constructor is called at the time of declaration of the object if a constructor has not been defined.
+   B. Constructor can be parameterized.
+   C. finalize() method is called when a object goes out of scope and is no longer needed.
+   D. finalize() method must be declared protected.
+   Correct Answer : OPTION C ,finalize() method is called when a object goes out of scope and is no longer needed.
+
+
+57.What is the output of this program?
+   class equality {
+           int x=3;
+           int y=4;
+           boolean isequal() {
+               return(x == y);
+           }
+       }
+       class Output {
+           public static void main(String args[])
+           {
+               equality obj = new equality();
+               obj.x = 5;
+               obj.y = 5;
+               System.out.println(obj.isequal);        }
+       }
+   A. false	B. true
+   C. 0	D. 1
+   Correct Answer : OPTION B, true
+58.Which of these is used to access member of class before object of that class is created?
+   A. public	B. private
+   C. static	D. protected
+   Correct Answer : OPTION C, static
+59.What is the output of this program?
+   class access{
+           public int x;
+    	private int y;
+           void cal(int a, int b){
+               x =  a + 1;
+               y =  b;
+           }
+       }
+       class access_specifier {
+           public static void main(String args[])
+           {
+               access obj = new access();
+               obj.cal(2, 3);
+               System.out.println(obj.x + " " + obj.y);
+           }
+      }
+   A. 3 3	B. 2 3
+   C. Runtime Error	D. Compilation Error
+   Correct Answer : OPTION D, Compilation Error. This is because variable y has private access modifier. Thus, it cannot be accessed from outside the class.
+60.Which of the following statements are incorrect?
+   A. Variables declared as final occupy memory.
+   B. final variable must be initialized at the time of declaration.
+   C. Arrays in java are implemented as an object.
+   D. All arrays contain an attribute-length which contains the number of elements stored in the array.
+   Correct Answer : OPTION A, Variables declared as final occupy memory.
+61.Which of these cannot be declared static?
+   A. class	B. object
+   C. variable	D. method
+   Correct Answer : OPTION B, object. static statements are executed as soon as the class containing them is loaded and prior to a instance, which is created after object declaration, cannot be static.
+
 
