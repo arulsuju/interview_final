@@ -4,10 +4,6 @@ import java.util.stream.Collectors;
 public class Season {
     private int getAmplitude(List<Integer> data) {
         return Collections.max(data) - Collections.min(data);
-
-    }
-    private static List<Integer> arrayToList(int[] arr)  {
-        return Arrays.stream(arr).boxed().collect(Collectors.toList());
     }
     public String solution(int[] T) {
         String WINTER = "WINTER";
@@ -15,7 +11,7 @@ public class Season {
         String SUMMER = "SUMMER";
         String SPRING = "SPRING";
 
-        List<Integer> list = arrayToList(T);
+        List<Integer> list = Arrays.stream(T).boxed().collect(Collectors.toList());
         int numberOfDays = list.size() / 4;
         List<Integer> winter = list.subList(0, numberOfDays);
         List<Integer> spring = list.subList(numberOfDays, numberOfDays * 2);
