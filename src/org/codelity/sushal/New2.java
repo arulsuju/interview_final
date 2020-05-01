@@ -2,10 +2,13 @@ package org.codelity.sushal;
 public class New2 {
     public void Solution(int n,int[] A){
         int total=0;
-        for(int i=0;i<A.length;i++){
-            for(int j=0;j<A.length;j++){
-                if(j>i && prime(j-i)==true){
-                    total=total+(A[j]-A[i]);
+        int length=A.length;
+        for(int i=0;i<length;i++){
+            for(int j=0;j<length;j++){
+                if(j>i){
+                    if(prime(j-i)) {
+                        total = total + (A[j] - A[i]);
+                    }
                 }
             }
         }
