@@ -12,6 +12,11 @@ class MyThread extends Thread{
         for(int i=1;i<=n;i++){
             try {
                 Thread.sleep(1000);
+                Thread.yield();
+                /*
+                * yield allow other thread to execute first and
+                *  it will execute this thread after that
+                 */
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -30,6 +35,10 @@ public class JoinDemo {
         System.out.println(start);
         myThread.start();
         myThread.join();
+        /*
+        * Yield method allows the myThread to execute first and after
+        * the thread dies it will execute other threads
+         */
         long end=System.currentTimeMillis();
         System.out.println(end);
         long completionTime=(end-start)/1000;
