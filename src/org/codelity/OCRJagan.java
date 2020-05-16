@@ -37,8 +37,8 @@ public class OCRJagan {
         return false;
     }
     public static void main(String[] args) {
-        String value1 = "A??Le";
-        String value2 = "??PL?";
+        String value1 = "a10b";
+        String value2 = "aaaaaaaaaaab";
         Boolean result = false;
 
         if (stringLenghtValidation(value1) == stringLenghtValidation(value2)) {

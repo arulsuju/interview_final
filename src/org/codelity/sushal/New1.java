@@ -3,8 +3,8 @@ package org.codelity.sushal;
 
 public class New1 {
     public void Solution(String S,String T){
-        int resS=process(S)%47;
-        int resT=process(T)%47;
+      int resS=process(S);
+      int resT=process(T);
         if(resS==resT){
             System.out.println("CHOSEN");
         }
@@ -23,7 +23,7 @@ public class New1 {
             if(temp<=90 & temp>=65)
                 prod=prod*(temp-temp_integer);
         }
-        return prod;
+        return prod%47;
     }
     public static void main(String[] args) {
 
