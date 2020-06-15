@@ -20,7 +20,7 @@ public class BinaryOnes {
             }
             if (A[i] == 1 && k + 1 > maximal)
                 result = 0;
-            return maximal;
+            return result;
         }
 
     public static void main(String[] args) {
