@@ -9,4 +9,6 @@ public class Four {
     public static void main(String[] args) {
         Four o=new Four(50);
     }
+
+
 }
