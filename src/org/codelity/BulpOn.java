@@ -46,17 +46,17 @@ import java.util.*;
 
  *******************************************************************************/
 public class BulpOn {
-    private static int getNumOfMoments(int[] nums) {
+    private static int getNumOfMoments(int[] A) {
 
-        int[] preSumNums = new int[nums.length + 1];
-        int[] preSumNumsSorted = new int[nums.length + 1];
-        int[] numsSorted = new int[nums.length];
-        for(int i=0;i<nums.length;i++)
-            numsSorted[i] = nums[i];
+        int[] preSumNums = new int[A.length + 1];
+        int[] preSumNumsSorted = new int[A.length + 1];
+        int[] numsSorted = new int[A.length];
+        for(int i=0;i<A.length;i++)
+            numsSorted[i] = A[i];
         Arrays.sort(numsSorted);
         int res = 0;
-        for(int i=0;i<nums.length;i++) {
-            preSumNums[i+1] = preSumNums[i] + nums[i];
+        for(int i=0;i<A.length;i++) {
+            preSumNums[i+1] = preSumNums[i] + A[i];
             preSumNumsSorted[i+1] = preSumNumsSorted[i] + numsSorted[i];
             if(preSumNums[i+1] == preSumNumsSorted[i+1])
                 res++;
