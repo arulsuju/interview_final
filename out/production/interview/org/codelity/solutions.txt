@@ -1,0 +1,1034 @@
+int[] ar = {A,B,C,D,E,F};
+
+            
+
+             Arrays.sort(ar);
+
+            
+
+             String hh;
+
+             String mm;
+
+             String ss;
+
+ 
+
+             if (ar[4] >= 6 && ar[5] >= 6 && ar[2] < 6 && ar[3] < 6) {
+
+                    hh = String.valueOf(ar[0] * 10 + ar[1]);
+
+                    mm = String.valueOf(ar[2] * 10 + ar[4]);
+
+                    ss = String.valueOf(ar[3] * 10 + ar[5]);
+
+             }
+
+             else if(ar[5]>=6 && ar[4]>=6 && ar[3]>=6 && ar[0]<=2 && ar[1]<6 && ar[2]<6 ) {
+
+                    hh = String.valueOf(ar[0] * 10 + ar[3]);
+
+                    mm = String.valueOf(ar[1] * 10 + ar[4]);
+
+                    ss = String.valueOf(ar[2] * 10 + ar[5]);
+
+             }
+
+            
+
+             else {
+
+                    hh = String.valueOf(ar[0] * 10 + ar[1]);
+
+                    mm = String.valueOf(ar[2] * 10 + ar[3]);
+
+                    ss = String.valueOf(ar[4] * 10 + ar[5]);
+
+             }
+
+             if (Integer.parseInt(hh) > 23 || Integer.parseInt(mm) > 59 || Integer.parseInt(ss) > 59) {
+
+                    //System.out.println("Not Valid");
+
+                    return "NOT POSSIBLE";
+
+             } else {
+
+                    if(hh.length()==1) {
+
+                           hh = "0"+hh;
+
+                    }
+
+                    if(mm.length()==1) {
+
+                           mm = "0"+mm;
+
+                    }
+
+                    if(ss.length()==1) {
+
+                           ss = "0"+ss;
+
+                    }
+
+                    //System.out.println(hh + ":" + mm + ":" + ss);
+
+                    return hh + ":" + mm + ":" + ss;
+
+             }
+
+ 
+--------------------
+import java.util.Arrays;
+
+import java.util.HashMap;
+
+import java.util.Scanner;
+
+ 
+
+public class Trying {
+
+ 
+
+      
+
+       static HashMap<String, Integer> hm = new HashMap<String, Integer>();
+
+       static{
+
+       hm.put("A", 0);
+
+       hm.put("B", 1);
+
+       hm.put("C", 2);
+
+       hm.put("D", 3);
+
+       hm.put("E", 4);
+
+       hm.put("F", 5);
+
+       hm.put("G", 6);
+
+       hm.put("H", 7);
+
+       hm.put("J", 8);
+
+       hm.put("K", 9);
+
+       }
+
+      
+
+       public static void main(String[] args) {
+
+      
+
+             Scanner sc = new Scanner(System.in);
+
+            
+
+             String s = sc.nextLine();
+
+             int rows = sc.nextInt();
+
+            
+
+             String[] ar;
+
+             if(s.equals("") ) {
+
+                    System.out.println(3);
+
+                    System.exit(0);
+
+             }
+
+            
+
+             int tot_seat =rows*3;
+
+             ar = s.split(" ");
+
+             int x = ar.length;
+
+             //String split check
+
+             /*
+
+             * for(String s1:ar) { System.out.println(s1.substring(0, s1.length()-1));
+
+             * System.out.println(s1.substring(s1.length()-1, s1.length())); }
+
+             */
+
+             int[][] arr= new int[rows+1][10];
+
+            
+
+               for(int i=0;i<ar.length;i++) {
+
+                    int row = Integer.parseInt(ar[i].substring(0, ar[i].length()-1));
+
+                    String c = (ar[i].substring(ar[i].length()-1, ar[i].length()));
+
+                    int col= hm.get(c);
+
+                    arr[row][col] = 1;
+
+               }
+
+             //CODE TO CHECK MATRIX IN 0 AND 1.... 0->EMPTY; 1->FILLED
+
+             /*
+
+             * for(int i=1;i<arr.length;i++) { for(int j=0;j<arr[0].length;j++) {
+
+             * System.out.print(arr[i][j]+" "); } System.out.println(); }
+
+             */
+
+             int count =0;
+
+             for(int i=1;i<=rows;i++) {
+
+                    if(arr[i][0]==1 || arr[i][1]==1 || arr[i][2]==1) {
+
+                           count++;
+
+                    }                  
+
+             }
+
+             for(int i=1;i<=rows;i++) {
+
+                    if(arr[i][7]==1 || arr[i][8]==1 || arr[i][9]==1) {
+
+                           count++;
+
+                    }                  
+
+             }
+
+             for(int i=1;i<=rows;i++) {
+
+                    if(arr[i][4]==1 || arr[i][5]==1) {
+
+                           count++;
+
+                    }
+
+                    if((arr[i][3]==1 && arr[i][4]==1) || (arr[i][3]==1 && arr[i][5]==1) ) {
+
+                           count++;
+
+                    }
+
+                    if((arr[i][5]==1 && arr[i][6]==1) || (arr[i][4]==1 && arr[i][6]==1) ) {
+
+                           count++;
+
+                    }
+
+             }
+
+            
+
+            
+
+             System.out.println(tot_seat-count);
+
+ 
+
+       }
+
+      
+
+}
+------------------------------------
+PATTERN QUIZ:
+
++---+---+---+---+---+
+
+|  1|  2|  3|  4|  5|
+
++---+---+---+---+---+
+
+|  6|  7|  8|  9| 10|
+
++---+---+---+---+---+
+
+| 11| 12| 13| 14|155|
+
++---+---+---+---+---+
+
+ 
+
+ 
+
+ 
+
+ 
+
+import java.util.Arrays;
+
+import java.util.Scanner;
+
+ 
+
+public class Trying {
+
+ 
+
+               public static void main(String[] args) {
+
+              
+
+                              Scanner sc= new Scanner(System.in);
+
+                              int n = sc.nextInt();
+
+                              int k = sc.nextInt();
+
+                             
+
+                              int[] ar = new int[n];
+
+                              for(int i=0;i<n;i++) {
+
+                                             ar[i] = sc.nextInt();
+
+                              }
+
+                              sc.close();
+
+                             
+
+                              String[] ar1 = new String[ar.length];
+
+                              for(int i=0;i<ar.length;i++) {
+
+                                             ar1[i] = String.valueOf(ar[i]);
+
+                              }
+
+                              Arrays.sort(ar);
+
+                              String s= String.valueOf(ar[ar.length-1]);
+
+                              //System.out.println(s);
+
+                              int length_max = s.length();
+
+                              String s1 = "+";
+
+                              String s2 = "";
+
+                              for(int i=0;i<s.length();i++) {
+
+                                             s2 =s2+"-";
+
+                              }
+
+                              String fin="";
+
+                              for(int i=0;i<k;i++) {
+
+                                             fin = fin+s1+s2;
+
+                              }
+
+                              fin = fin+s1;
+
+                              System.out.println(fin);
+
+                              String pattern ="";
+
+                              int count =0;
+
+                              for(int i=0;i<=(ar.length-1)/k;i++) {
+
+                                             for(int j=k*count;j<k*(count+1);j++) {
+
+                                                            if(j>=ar.length) {
+
+                                                                           pattern = pattern + "|";
+
+                                                                           for(int x1 =0;x1<length_max;x1++) {
+
+                                                                                          pattern = pattern+" ";
+
+                                                                           }
+
+                                                                          
+
+                                                                           break;
+
+                                                            }
+
+                                                            pattern = pattern+ "|";
+
+                                                           
+
+                                                            for(int x=0; x<length_max-ar1[j].length();x++) {
+
+                                                                           pattern = pattern+" ";
+
+                                                            }             
+
+                                                            pattern = pattern+ar1[j];
+
+                                                           
+
+                                             }
+
+                                             count++;
+
+                                             pattern =pattern+"|";
+
+                                             System.out.println(pattern);
+
+                                             System.out.println(fin);
+
+                                             pattern = "";
+
+                              }
+
+                             
+
+                             
+
+                             
+
+                             
+
+               }
+
+              
+
+}
+-------------------------------------------------------
+SADDLE POINT QUESTION;
+
+ 
+
+ 
+
+import java.util.Arrays;
+
+import java.util.Scanner;
+
+ 
+
+public class Trying {
+
+ 
+
+               public static void main(String[] args) {
+
+              
+
+                              Scanner sc= new Scanner(System.in);
+
+                             
+
+                              int row =sc.nextInt();
+
+                              int col =sc.nextInt();
+
+                             
+
+                              int[][] ar = new int[row][col];
+
+                             
+
+                              //storing row-wise values
+
+                              for(int i = 0;i<col;i++) {
+
+                                             for(int j=0;j<row;j++) {
+
+                                                            ar[i][j] = sc.nextInt();
+
+                                             }
+
+                              }
+
+                             
+
+                              //print rows of matrix
+
+                              for(int i = 0;i<col;i++) {
+
+                                             for(int j=0;j<row;j++) {
+
+                                                            System.out.print(ar[i][j]+" ");
+
+                                             }
+
+                                             System.out.println();
+
+                              }
+
+                              int sad_point =0;
+
+                              //initial check
+
+                              if(ar.length <=2 || ar[0].length<=2 ) {
+
+                                             System.out.println("0 saddle points");
+
+                                             System.exit(0);
+
+                              }
+
+                              //if all conditions are cool..!! we proceed for saddle point
+
+                              else {
+
+                                             for(int i= 1;i<ar.length-1;i++) {
+
+                                                            for(int j = 1;j<ar[0].length-1;j++) {
+
+                                                                          
+
+                                                                           if(ar[i][j]<ar[i][j-1] && ar[i][j]<ar[i][j+1] && ar[i][j]>ar[i-1][j] && ar[i][j]>ar[i+1][j]) {
+
+                                                                                          sad_point++;
+
+                                                                                          //System.out.println(" Value is : "+ ar[i][j]+ " "+ ar[i][j+1]+ " "+ sad_point);
+
+                                                                           }
+
+                                                                           else if(ar[i][j]>ar[i][j-1] && ar[i][j]>ar[i][j+1] && ar[i][j]<ar[i-1][j] && ar[i][j]<ar[i+1][j]) {
+
+                                                                                          sad_point++;
+
+                                                                           }
+
+                                                            //            System.out.println("sad points = "+ sad_point+ " i is : "+i+ " j is : "+j);  
+
+                                                            }
+
+                                                           
+
+                                             }
+
+                                             System.out.println("sad pointsaaa "+ sad_point);
+
+                                            
+
+                                            
+
+                              }
+
+                             
+
+                             
+
+                             
+
+               }
+
+              
+
+}
+-----------------------
+import java.util.Arrays;
+
+import java.util.HashMap;
+
+import java.util.Scanner;
+
+ 
+
+public class Trying {
+
+ 
+
+      
+
+       static HashMap<String, Integer> hm = new HashMap<String, Integer>();
+
+       static{
+
+       hm.put("A", 0);
+
+       hm.put("B", 1);
+
+       hm.put("C", 2);
+
+       hm.put("D", 3);
+
+       hm.put("E", 4);
+
+       hm.put("F", 5);
+
+       hm.put("G", 6);
+
+       hm.put("H", 7);
+
+       hm.put("J", 8);
+
+       hm.put("K", 9);
+
+       }
+
+      
+
+       public static void main(String[] args) {
+
+      
+
+             Scanner sc = new Scanner(System.in);
+
+            
+
+             String s = sc.nextLine();
+
+             int rows = sc.nextInt();
+
+            
+
+             String[] ar;
+
+             if(s.equals("") ) {
+
+                    System.out.println(3*rows);
+
+                    System.exit(0);
+
+             }
+
+            
+
+             int tot_seat =rows*3;
+
+             ar = s.split(" ");
+
+             int x = ar.length;
+
+             //String split check
+
+             /*
+
+             * for(String s1:ar) { System.out.println(s1.substring(0, s1.length()-1));
+
+             * System.out.println(s1.substring(s1.length()-1, s1.length())); }
+
+             */
+
+             int[][] arr= new int[rows+1][10];
+
+            
+
+               for(int i=0;i<ar.length;i++) {
+
+                    int row = Integer.parseInt(ar[i].substring(0, ar[i].length()-1));
+
+                    String c = (ar[i].substring(ar[i].length()-1, ar[i].length()));
+
+                    int col= hm.get(c);
+
+                    arr[row][col] = 1;
+
+               }
+
+             //CODE TO CHECK MATRIX IN 0 AND 1.... 0->EMPTY; 1->FILLED
+
+             /*
+
+             * for(int i=1;i<arr.length;i++) { for(int j=0;j<arr[0].length;j++) {
+
+             * System.out.print(arr[i][j]+" "); } System.out.println(); }
+
+             */
+
+             int count =0;
+
+             for(int i=1;i<=rows;i++) {
+
+                    if(arr[i][0]==1 || arr[i][1]==1 || arr[i][2]==1) {
+
+                           count++;
+
+                    }                  
+
+             }
+
+             for(int i=1;i<=rows;i++) {
+
+                    if(arr[i][7]==1 || arr[i][8]==1 || arr[i][9]==1) {
+
+                           count++;
+
+                    }                  
+
+             }
+
+             for(int i=1;i<=rows;i++) {
+
+                    if(arr[i][4]==1 || arr[i][5]==1) {
+
+                           count++;
+
+                    }
+
+                    if((arr[i][3]==1 && arr[i][4]==1) || (arr[i][3]==1 && arr[i][5]==1) ) {
+
+                           count++;
+
+                    }
+
+                    if((arr[i][5]==1 && arr[i][6]==1) || (arr[i][4]==1 && arr[i][6]==1) ) {
+
+                           count++;
+
+                    }
+
+             }
+
+            
+
+            
+
+             System.out.println(tot_seat-count);
+
+ 
+
+       }
+
+      
+
+}
+------------------
+BULB SHINING QUESTION:
+
+ 
+
+ 
+
+ 
+
+import java.util.Arrays;
+
+import java.util.Scanner;
+
+ 
+
+public class Trying {
+
+ 
+
+               public static void main(String[] args) {
+
+              
+
+                              Scanner sc= new Scanner(System.in);
+
+                              int n= sc.nextInt();
+
+                             
+
+                              int[] ar = new int[n];
+
+                             
+
+                              for(int i=0;i<n;i++) {
+
+                                             ar[i]= sc.nextInt();
+
+                              }
+
+                              int shine =0;
+
+                              int count =0;
+
+                              for(int i=0;i<ar.length;i++) {
+
+                                             for(int j=0;j<=i;j++) {
+
+                                                            if(ar[i] >= ar[j]) {
+
+                                                                           count++;
+
+                                                            }
+
+                                             }
+
+                                             System.out.println(count);
+
+                                             if(count==ar[i]) {
+
+                                                            shine++;
+
+                                             }
+
+                                             System.out.println(shine +" are shining "+ i);
+
+                                             count=0;
+
+                              }
+
+                              System.out.println(shine);
+
+                             
+
+                             
+
+                             
+
+               }
+
+              
+
+}
+---------------------------
+int n = 6;
+int dates [n+1] = { 1, 3, 5, 8, 9, 10, infinity };
+int ticket [n];
+int cost [n+1];
+ 
+cost [n] = 0;
+ 
+for i = n-1 downto 0
+    cost for 1 day = 2 + cost [i+1]
+    let k7 = smallest k where dates [k] ≥ dates [i] + 7
+    cost for 7 day = 7 + cost [k7]
+    let k30 = smallest k where dates [k] ≥ dates [i] + 30
+    cost for 30 days = 25 + cost [k30]
+ 
+    if cost for 1 day is smallest
+        ticket [i] = 1
+        cost [i] = cost for 1 day
+    else if cost for 7 day is smallest
+        ticket [i] = 7
+        cost [i] = cost for 7 days
+    else
+        ticket [i] = 30
+        cost [i] = cost for 30 days
+    endif
+ ==============
+List<Integer> al = new ArrayList<>(Arrays.asList(A,B,C,D));
+
+             Collections.sort(al);
+
+            
+
+             int a = al.get(0);
+
+             int b = al.get(1);
+
+             int c = al.get(2);
+
+             int d = al.get(3);
+
+            
+
+             double res = Math.pow((a-c), 2) + Math.pow((b-d), 2);
+
+             int result = (int) res;
+
+            
+
+             return result;
+-------------------------
+public class MatrixDemo {
+ 
+ 
+    public static void main(String[] args)
+       {
+            
+             int[][] matrix = {{2,7,5},{3,0,1},{2,1,-7},{0,2,1},{1,6,8}};
+                 int rows = matrix.length;
+                 int columns = matrix[0].length;
+                 int[] rowsSum = new int[rows];
+                 int[] columnsSum = new int[columns];
+                 int rowSumUp = 0;
+                 int rowSumDown = 0;
+                 int ColumnSumLeft = 0;
+                 int ColumnSumRight = 0;
+                 int count = 0;
+                
+                 for(int x = 0; x<rows;x++)
+                 {
+                    for(int y=0;y<columns;y++)
+                    {
+                          rowsSum[x] += matrix[x][y];
+                    }
+                 }
+                 for(int x = 0; x<columns;x++)
+                 {
+                    for(int y=0;y<rows;y++)
+                    {
+                          columnsSum[x] += matrix[y][x];
+                    }
+                 }
+            
+             //  for(int i=0;i<columnsSum.length;i++) { System.out.println(columnsSum[i]); }
+            
+                 
+                   
+                 for (int i = 1; i < rows-1; i++)
+                 {
+                     for (int j = 1; j < columns-1; j++)
+                     {
+                          for(int a=0;a<i;a++)
+                          {
+                                 rowSumUp += rowsSum[a];
+                          }
+                          for(int b=i+1;b<rows;b++)
+                          {
+                                 rowSumDown += rowsSum[b];
+                          }
+                          for(int a=0;a<j;a++)
+                          {
+                                 ColumnSumLeft += columnsSum[a];
+                          }
+                          for(int b=j+1;b<columns;b++)
+                          {
+                                 ColumnSumRight += columnsSum[b];
+                          }
+                     }
+                    
+                     if(rowSumUp==rowSumDown && ColumnSumLeft==ColumnSumRight)
+                     {
+                         
+                           count++;
+                     }
+                    
+                    // System.out.println("down = "+rowSumDown+" up: "+rowSumUp);
+                 }
+                
+                 
+                 
+             System.out.println(count);
+       }
+ 
+}
+----------------------------
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.function.*;
+import java.util.regex.*;
+import java.util.stream.*;
+import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toList;
+
+public class Solution {
+
+    // Complete the bonAppetit function below.
+    static void bonAppetit(List<Integer> bill, int k, int b) {
+
+        int sum = 0;
+        int total = 0;
+        for(int i=0;i<bill.size();i++)
+        {
+            total+= bill.get(i);
+
+            if(i!=k)
+                sum += bill.get(i);
+        }
+        if(sum/2 == b)
+        {
+            System.out.println("Bon Appetit");
+        }
+        else
+        {
+            System.out.print((total/2)-(sum/2));
+        }
+
+    }
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+
+        String[] nk = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");
+
+        int n = Integer.parseInt(nk[0]);
+
+        int k = Integer.parseInt(nk[1]);
+
+        List<Integer> bill = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
+            .map(Integer::parseInt)
+            .collect(toList());
+
+        int b = Integer.parseInt(bufferedReader.readLine().trim());
+
+        bonAppetit(bill, k, b);
+
+        bufferedReader.close();
+    }
+}
+---------------------
+package computrade.puzzels;
+
+import java.util.*;
+
+public class GFG {
+
+// Driver Code
+public static void main(String[] args)
+{
+
+// Declare and Initialize an array
+int[] array = { 4, 4, 2, 2, 2, 2, 3, 3, 1, 1, 6, 7, 5 };
+
+Map<Integer, Integer> map = new HashMap<>();
+List<Integer> outputArray = new ArrayList<>();
+
+// Assign elements and their count in the list and map
+for (int current : array) {
+int count = map.getOrDefault(current, 0);
+map.put(current, count + 1);
+outputArray.add(current);
+}
+
+// Compare the map by value
+SortComparator comp = new SortComparator(map);
+
+// Sort the map using Collections CLass
+Collections.sort(outputArray, comp);
+
+// Final Output
+for (Integer i : outputArray) {
+System.out.print(i + " ");
+}
+}
+}
+
+// Implement Comparator Interface to sort the values
+class SortComparator implements Comparator<Integer> {
+private final Map<Integer, Integer> freqMap;
+
+// Assign the specified map
+SortComparator(Map<Integer, Integer> tFreqMap)
+{
+this.freqMap = tFreqMap;
+}
+
+// Compare the values
+@Override
+public int compare(Integer k1, Integer k2)
+{
+
+// Compare value by frequency
+int freqCompare = freqMap.get(k1).compareTo(freqMap.get(k2));
+
+// Compare value if frequency is equal
+int valueCompare = k1.compareTo(k2);
+
+// If frequency is equal, then just compare by value, otherwise -
+// compare by the frequency.
+if (freqCompare == 0)
+return valueCompare;
+else
+return freqCompare;
+}
+}

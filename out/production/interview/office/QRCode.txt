@@ -1,0 +1,18 @@
+Both QR_IBAN and Payments_details must be entered
+
+String QR_IBAN
+   CH1230001000012751216
+Condition
+1. No Space
+2. if user Enters ch it should convert to CH
+3. Fifth character to be '3'
+4. Length should be '21'
+
+String Payments_details
+    /QRR/123456789123456789123456789
+Condition
+1. No Space
+2. /QRR/ Followed by 27 numbers
+
+
+

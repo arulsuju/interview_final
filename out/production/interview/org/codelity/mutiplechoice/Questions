@@ -1,0 +1,408 @@
+1. Which Aggregate function that does not ignore NULLS(SQL)
+    a.Distinct b.count(*) c.Average d.all the above
+    ANSWER : b
+2.Public directive of Cache Control Header of HTTP response indicates that
+    resource is cachable by any component.
+    A - true(1)
+    B - false(0)
+    ANSWER : 1
+3. Identify the true statement
+    a. It is possible to have more than one value as primary key
+    b. the primary key constraint can be referred to only one foreign key
+    c. the primary key constraint can be imposed by combining one or more column
+    d. Two primarykey on two different tables can have same name
+    answer : c
+
+4. GroupBy if used ............can be used to remove duplicates from data
+    a. with aggregates
+    b.with order by
+    c.without order by
+    d.without aggregates
+    answer: d
+5. which is true , if data is required in descending order
+    a.both b and c
+    b.use "IN DESC" with orderby clause
+    c. use "<> ASC" with orderby clause
+    d.None of these
+    answer : d
+
+6. which is not correct
+    a. A recursive method must have base class
+    b.recursion always used stack
+    c. Recurion is managed by Java runtime environment
+    d. Recursion is faster than the programs written loop to call the function repeatedly
+     ANSWER : D
+
+7. which is true
+    a.if programmer wants to use several threads then he have to use stringbuffer
+    b. StringBuffer is synchronized,StringBuilder is non-synchronized
+    c. string is immutable , stringbuffer and stringbuilder are mutable
+    d. all the above
+    ANSWER : D
+8. What is false about session object in hibernate
+    a. session is light weight and non thread safe
+    b.we can share session between threads
+    c.session represents single unit of work in database
+    d.Session is the primary interface for the persistence service
+    ANSER : B
+
+9. Which is not an session method
+    a.save
+    b.remove
+    c.saveorUpdate
+    d. none of the above
+    ANSWER : b
+10.The most commonly used ApplicationContext implementations are −
+
+   FileSystemXmlApplicationContext −
+   This container loads the definitions of the beans from an XML file. Here you need to provide the full path of the XML bean configuration file to the constructor.
+
+   ClassPathXmlApplicationContext −
+   This container loads the definitions of the beans from an XML file. Here you do not need to provide the full path of the XML file but you need to set CLASSPATH properly because this container will look like bean configuration XML file in CLASSPATH.
+
+   WebXmlApplicationContext −
+   This container loads the XML file with definitions of all beans from within a web application.
+11. if a bean is created any number of times , then the scope is?
+    a.session
+    b.global-session
+    c.prototype
+    d. request
+    answer : prototype
+
+12. There are basically two types of IOC Containers in Spring:
+    BeanFactory: BeanFactory is like a factory class that contains a collection of beans. It instantiates the bean whenever asked for by clients.
+    ApplicationContext: The ApplicationContext interface is built on top of the BeanFactory interface.
+13. which is not available in oracle
+    a.on delete cascade
+    b.on update cascade
+    c.create sequence in oracle
+    d.drop sequence in oracle
+
+    answer: b
+14.A . . . . . . . subquery is one that depends on a value in the outer query.
+
+   A) nested
+   B) correlated
+   C) materialized
+   D) both b & c
+
+   ANSWER : B
+15.Which prefixes are available to Oracle triggers?
+   A. :new only
+   B. :old only
+   C. Both :new and :old
+   D. Neither :new nor :old
+   Answer: Option C
+
+16. A sub query evaluated how many times
+    a.twice b.thrice c.once d.none of the above
+    answer : c
+17. default format mask date in oracle
+    a. dd-mm-yy b.mon-dd-yyyy c.mon-dd-yy d.dd-mon-yyyy
+    answer: a
+18.addScalar() method in hibernate...
+    Double max = (Double) sess.createSQLQuery("select max(cat.weight) as
+    maxWeight from cats cat")
+    .addScalar("maxWeight", Hibernate.DOUBLE);
+    .uniqueResult();
+    addScalar() method confim that maxWeight is always double type.
+
+    This way you don't need to check for it is double or not.
+
+    http://www.techfaq360.com/hibernate_interview_questions.jsp?qid=13
+
+ 19.What is the main difference between the Set and Bag collections in Hibernate? In what scenarios should we use Set and Bag?
+ A <bag> is an unordered collection,
+ which can contain duplicated elements.
+ That means if you persist a bag with some order of elements,
+ you cannot expect the same order retains when the collection is retrieved. There is not a “bag” concept in Java collections framework, so we just use a java.util.List corresponds to a <bag>.
+ A <set> is similar to <bag> except that it can only store unique objects. That means no duplicate elements can be contained in a set.
+ When you add the same element to a set for second time, it will replace the old one. A set is unordered by default but we can ask it to be sorted. The corresponding type of a in Java is java.util.Set.
+
+ 20.which is true
+  a.bag has index column
+  b. bag allows duplicates
+  c. bag doesnt allow duplicates
+  d. none of the above
+  answer : c
+
+21.Q. You need to give the MANAGER role the ability to select from insert into and modify existing rows in the STUDENT_GRADES table.
+
+   Anyone given this MANAGER role should be able to pass those privileges on to others. Which statement accomplishes this.
+
+   A. GRANT select, insert, update ON student_grades TO manager;
+
+   B. GRANT select, insert, update ON student_grades TO ROLE manager
+
+   C. GRANT select, insert, modity ON student_grades TO manager WITH GRANT OPTION;
+
+   D. GRANT select, insert, update ON student_grades TO manager WITH GRANT OPTION
+
+   E. GRANT select, insert, update ON student_grades TO ROLE manager WITH GRANT OPTION;
+
+   F. GRANT select, insert, modify ON student_grades TO ROLE manager WITH GRANT OPTION
+
+    answer : D
+
+    https://www.stechies.com/oracle-certified-professional-exams-iz007-questions-set-1_1/
+
+22.A table that displays data redundancies yields ____________ anomalies
+   a.	Insertion
+   b.	Deletion
+   c.	Update
+   d.	All of the above
+   Answer:All of the above
+
+23 , what is % in sql
+    Represents zero or more characters	bl% finds bl, black, blue, and blob
+    https://www.w3schools.com/sql/sql_wildcards.asp
+
+24.Is ++ (increment) operator thread-safe in Java?
+No. Neither increment operator (++)
+nor the decrement operaor (--) is thread safe
+
+25.Which of the following HTTP Status code means CREATED, when a resource is
+   successful created using POST or PUT request?
+   A - 200
+   B - 201
+   C - 204
+   D - 304
+answer : b
+
+26.- Which of the following annotation of JAX RS API is used to annotate a method
+   used to create/update resource?
+   A - @Path
+   B - @GET
+   C - @PUT
+   D - @POST
+   answer : D
+
+27.Servlet Filters are Java classes that can be used in Servlet Programming for the following purposes −
+   To intercept requests from a client before they access a resource at back end.
+   To manipulate responses from server before they are sent back to the client.
+   There are various types of filters suggested by the specifications −
+   Authentication Filters.
+   Data compression Filters.
+   Encryption Filters.
+   Filters that trigger resource access events.
+   Image Conversion Filters.
+   Logging and Auditing Filters.
+   MIME-TYPE Chain Filters.
+   Tokenizing Filters .
+   XSL/T Filters That Transform XML Content.
+28.he isScriptingEnabled Attribute
+   The isScriptingEnabled attribute determines if the scripting elements are allowed for use.
+
+   The default value (true) enables scriptlets, expressions, and declarations. If the attribute's value is set to false, a translation-time error will be raised if the JSP uses any scriptlets, expressions (non-EL), or declarations.
+
+   The attribute’s value can be set to false if you want to restrict the usage of scriptlets, expressions (non-EL), or declarations −
+
+   <%@ page isScriptingEnabled = "false" %>
+
+29. Which of these method waits for the thread to treminate?
+   A. sleep()B. isAlive()C. join()D. stop()
+   answer : c
+   http://www.allindiaexams.in/engineering/cse/java-questions-and-answers/threads
+
+30.for Oracle 11g :(Maximum allowed column)
+   1000 Columns per table
+   32 columns per index
+   Logical Database Limits:
+   https://docs.oracle.com/cd/B28359_01/server.111/b28320/limits003.htm#i288032
+31.how do we  maintain data integrity in a database
+    a.using indexes
+    b. using referential constraints
+    c.using primary key
+    d. both B and C
+    Answer: d
+32.A savepoint is a way of implementing subtransactions
+(also known as nested transactions) within a relational database management
+system by indicating a point within a transaction that can
+be "rolled back to" without affecting any work done in the transaction
+before the savepoint was created.
+
+33.In SQL (Structured Query Language), the term cardinality refers to the uniqueness of data values contained in a particular column (attribute) of a database table. The lower the cardinality, the more duplicated elements in a column.
+
+34.Can we use select statement in stored procedure?
+   Stored procedures are typically executed with an EXEC statement. However, you can execute a stored procedure implicitly from within a SELECT statement, provided that the stored procedure returns a result set.
+
+35.An interface can have default methods and static methods. Any other methods are implicitly public and abstract. All the fields declared in an interface are implicitly public, static and final constants. ... The static method sayHello can be called directly using the interface name without any sub classes.
+
+36. Which of these interface handle sequences?
+     Set
+     ✔List
+     Comparator
+     Collection
+   Answer: List  https://www.easytutorial.in/question/20074
+
+37.The class java.lang.Exception is
+   Options
+   - protected
+   - extends Throwable
+   - implements Throwable
+   - serializable
+
+   CORRECT ANSWER : extends Throwable
+ 38.In implementing two classes Employee and Manager, such that each Manager is an Employee, what should be the relationship between these classes. Select the one correct answer.
+    (A) Employee should be the base class of Manager class.
+    (B) Manager should be the base class of Employee class.
+    (C) Manager class should include the Employee class as a data member.
+    (D) Employee class should include Manager class as a data member.
+    Answer : Employee should be the base class of Manager class.
+    Description :The Manager and Employee share as "is a" relationship -
+    A Manager is an Employee.
+    This is captured by making Employee the base class of Manager.
+    http://www.pskills.org/test.jsp?test=coretest8#ques3
+39.On the other hand, Thread.sleep() is a static method that can be called from any context.
+Thread.sleep() pauses the current thread and does not release any locks.
+40.A DOM parser creates a tree structure in memory from the input document
+and then waits for requests from client.
+But a SAX parser does not create any internal structure.
+41.what is the data dictionary table to view all the session related data in a given database instance
+a. V$SQL b.all_sessions c.V$SESSION d.None of the above
+
+42.does dropping of table also drop all the dependent constraints and indexes
+a.No they have to be dropped manually
+b.yes they are dropped automatically
+c. it happens randomly
+d. None of the above
+
+43.can we remove rows of the table that depends value of another table
+a. Only table having less number of rows
+b. no this cant be done
+c. yes, they can be used with the help of sub queries on values from another table
+d. None of the above
+
+44. which of the following objects do not store data
+a. materialized view
+b. tables
+c. views
+d. none of the above
+
+45. which of the following object is required to access data of different schema on another database instance
+a. right
+b. grant
+c. DB job
+d. DB link
+
+46.https://www.quora.com/When-string-is-created-using-new-then-where-is-the-object-stored-in-heap-memory-or-string-constant-pool-or-both
+
+46.What is difference between "abc".equals(unknown string) and unknown.equals("abc")?
+   A. First is safe for NullPointerException
+   B. Second is safe for NullPointerException
+   answer : b
+47.What is the stored in the object obj in following lines of code?
+   box obj;
+   A. Memory address of allocated memory.	B. NULL
+   C. Any arbitrary pointer	D. Garbage
+   Correct Answer : OPTION B, NULL. Memory is allocated to an object using new operator. box obj; just declares a reference to object, no memory is allocated to it hence it points to NULL.
+48.What is the output of this program?
+   class main_class {
+           public static void main(String args[])
+           {
+               int x = 9;
+               if (x == 9) {
+                   int x = 8;
+                   System.out.println(x);
+               }
+           }
+       }
+   A. 9	B. 8
+   C. Compilation Error	D. Runtime Error
+   Correct Answer : OPTION C, Compilation Error. Two variables with the same name can't be created in a class.
+
+49.When we create String with new() Operator, where is it stored?
+   A. In to the String Pool
+   B. It is created in Heap but not added to String Pool
+   C. Not stored anywhere
+   D. None of the above
+   Correct Answer : OPTION B, It is created in Heap but not added to String Pool. When we create string with new() Operator, it's created in heap and not added into string pool while String created using literal are created in String pool itself.
+50.Which two methods you need to implement to use an Object as key in HashMap?
+   A. push() and pop()	B. get() and set()
+   C. equals() and hashcode()	D. put() and get()
+   Correct Answer : OPTION C, equals() and hashcode()
+
+
+51.Can abstract class have constructor in Java. Yes or No?
+   A. Yes	B. No
+   Correct Answer : OPTION A, Yes
+52.What is difference between "abc".equals(unknown string) and unknown.equals("abc")?
+   A. First is safe for NullPointerException	B. Second is safe for NullPointerException
+   Correct Answer : OPTION A, First is safe for NullPointerException
+53.Which keyword is used by method to refer to the object that invoked it?
+   A. import	B. catch
+   C. abstract	D. this
+   Correct Answer : OPTION D, this
+54.Which of the following is a method having same name as that of its class?
+   A. finalize	B. delete
+   C. class	D. constructor
+   Correct Answer : OPTION D, Constructor
+55.Which method is used to perform some action when the object is to be destroyed?
+   A. finalize()	B. delete()
+   C. main()	D. None of the above mentioned
+   Correct Answer : OPTION A, finalize()
+
+
+56.Which of the following stements are incorrect?
+   A. Default constructor is called at the time of declaration of the object if a constructor has not been defined.
+   B. Constructor can be parameterized.
+   C. finalize() method is called when a object goes out of scope and is no longer needed.
+   D. finalize() method must be declared protected.
+   Correct Answer : OPTION C ,finalize() method is called when a object goes out of scope and is no longer needed.
+
+
+57.What is the output of this program?
+   class equality {
+           int x=3;
+           int y=4;
+           boolean isequal() {
+               return(x == y);
+           }
+       }
+       class Output {
+           public static void main(String args[])
+           {
+               equality obj = new equality();
+               obj.x = 5;
+               obj.y = 5;
+               System.out.println(obj.isequal);        }
+       }
+   A. false	B. true
+   C. 0	D. 1
+   Correct Answer : OPTION B, true
+58.Which of these is used to access member of class before object of that class is created?
+   A. public	B. private
+   C. static	D. protected
+   Correct Answer : OPTION C, static
+59.What is the output of this program?
+   class access{
+           public int x;
+    	private int y;
+           void cal(int a, int b){
+               x =  a + 1;
+               y =  b;
+           }
+       }
+       class access_specifier {
+           public static void main(String args[])
+           {
+               access obj = new access();
+               obj.cal(2, 3);
+               System.out.println(obj.x + " " + obj.y);
+           }
+      }
+   A. 3 3	B. 2 3
+   C. Runtime Error	D. Compilation Error
+   Correct Answer : OPTION D, Compilation Error. This is because variable y has private access modifier. Thus, it cannot be accessed from outside the class.
+60.Which of the following statements are incorrect?
+   A. Variables declared as final occupy memory.
+   B. final variable must be initialized at the time of declaration.
+   C. Arrays in java are implemented as an object.
+   D. All arrays contain an attribute-length which contains the number of elements stored in the array.
+   Correct Answer : OPTION A, Variables declared as final occupy memory.
+61.Which of these cannot be declared static?
+   A. class	B. object
+   C. variable	D. method
+   Correct Answer : OPTION B, object. static statements are executed as soon as the class containing them is loaded and prior to a instance, which is created after object declaration, cannot be static.
+
+
