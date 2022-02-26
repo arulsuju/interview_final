@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1707da4-94d0-4267-98b7-5e3370a76148" name="Changes" comment="added latest1">
-      <change afterPath="$PROJECT_DIR$/src/lamda/ArrayListLamdaDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lamda/EmployeeStreamFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lamda/MethodReferenceExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lamda/StreamsDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/thread/SynchronizationDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/thread/ThreadDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lamda/FlatMapDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/interview/lamda/LamdaDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/interview/lamda/LamdaDemo.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +40,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager" selected="Application.SynchronizationDemo">
+  <component name="RunManager" selected="Application.FlatMapDemo">
     <configuration name="EmployeeStreamFilter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lamda.EmployeeStreamFilter" />
       <module name="interview" />
@@ -60,8 +54,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MethodReferenceExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lamda.MethodReferenceExample" />
+    <configuration name="FlatMapDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lamda.FlatMapDemo" />
       <module name="interview" />
       <extension name="coverage">
         <pattern>
@@ -114,11 +108,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FlatMapDemo" />
         <item itemvalue="Application.SynchronizationDemo" />
         <item itemvalue="Application.ThreadDemo" />
         <item itemvalue="Application.EmployeeStreamFilter" />
         <item itemvalue="Application.StreamsDemo" />
-        <item itemvalue="Application.MethodReferenceExample" />
       </list>
     </recent_temporary>
   </component>
@@ -133,7 +127,7 @@
       <workItem from="1645801884262" duration="1013000" />
       <workItem from="1645818589921" duration="1518000" />
       <workItem from="1645857761762" duration="8104000" />
-      <workItem from="1645889749465" duration="3210000" />
+      <workItem from="1645889749465" duration="5115000" />
     </task>
     <task id="LOCAL-00001" summary="added latest">
       <created>1645819552494</created>
@@ -163,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645858613757</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added latest1">
+      <created>1645895069761</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1645895069761</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
