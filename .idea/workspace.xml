@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1707da4-94d0-4267-98b7-5e3370a76148" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lamda/LamdaDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lamda/Threadlamda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CompareTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CompareTest.java" afterDir="false" />
+    <list default="true" id="d1707da4-94d0-4267-98b7-5e3370a76148" name="Changes" comment="added latest1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lamda/LamdaDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lamda/LamdaDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,8 +113,31 @@
       <option name="presentableId" value="Default" />
       <updated>1645801880580</updated>
       <workItem from="1645801884262" duration="1013000" />
-      <workItem from="1645818589921" duration="774000" />
+      <workItem from="1645818589921" duration="1518000" />
+      <workItem from="1645857761762" duration="615000" />
     </task>
+    <task id="LOCAL-00001" summary="added latest">
+      <created>1645819552494</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1645819552495</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added latest1">
+      <created>1645819576937</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1645819576937</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added latest1">
+      <created>1645819708387</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1645819708387</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +153,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added latest" />
+    <MESSAGE value="added latest1" />
+    <option name="LAST_COMMIT_MESSAGE" value="added latest1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
