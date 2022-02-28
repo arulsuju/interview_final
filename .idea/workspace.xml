@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1707da4-94d0-4267-98b7-5e3370a76148" name="Changes" comment="added latest1">
+    <list default="true" id="d1707da4-94d0-4267-98b7-5e3370a76148" name="Changes" comment="UnModificableArrayList">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnModificableArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnModificableArrayList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,6 +123,7 @@
       <workItem from="1645857761762" duration="8104000" />
       <workItem from="1645889749465" duration="6436000" />
       <workItem from="1645968771907" duration="101000" />
+      <workItem from="1646064296245" duration="1071000" />
     </task>
     <task id="LOCAL-00001" summary="added latest">
       <created>1645819552494</created>
@@ -172,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645902114317</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="UnModificableArrayList">
+      <created>1646064534233</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1646064534233</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,7 +201,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added latest" />
     <MESSAGE value="added latest1" />
-    <option name="LAST_COMMIT_MESSAGE" value="added latest1" />
+    <MESSAGE value="UnModificableArrayList" />
+    <option name="LAST_COMMIT_MESSAGE" value="UnModificableArrayList" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
